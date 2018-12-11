@@ -27,3 +27,17 @@ function personalise( campaign, person){
 function getAge(inputString){
 return parseInt(inputString)
 }
+
+
+//Given an array, return the difference between the count of even numbers and the count of odd numbers. 0 will be considered an even number.
+
+function solve(a){
+  a = a.filter(x => typeof x == 'number')
+  let evens = 0;
+  let odds = 0;
+  for(let i = 0; i < a.length; i++){
+    if(a[i]% 2 == 0) evens++
+    if(a[i]% 2 !== 0) odds++
+  }
+  return evens - odds;
+};
