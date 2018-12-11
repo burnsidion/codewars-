@@ -35,9 +35,6 @@ function solve(a){
   a = a.filter(x => typeof x == 'number')
   let evens = 0;
   let odds = 0;
-  for(let i = 0; i < a.length; i++){
-    if(a[i]% 2 == 0) evens++
-    if(a[i]% 2 !== 0) odds++
-  }
+  a.map(x => x%2 == 0 ? evens++ : odds++)
   return evens - odds;
 };
