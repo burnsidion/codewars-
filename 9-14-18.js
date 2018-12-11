@@ -32,9 +32,13 @@ return parseInt(inputString)
 //Given an array, return the difference between the count of even numbers and the count of odd numbers. 0 will be considered an even number.
 
 function solve(a){
+  //filter out non numbers
   a = a.filter(x => typeof x == 'number')
+  //set up count for even and odd numbers
   let evens = 0;
   let odds = 0;
+  //map over array and check if number is even or odd, increase respective count variable
   a.map(x => x%2 == 0 ? evens++ : odds++)
+  //return amount of even numbers minus amount of odd numbers to see how many numbers are between them
   return evens - odds;
 };
