@@ -8,24 +8,27 @@ let dates = [
   'Dec 13, 2006'
 ];
 
-function orderDates(dates) {
+
+function orderDates(dates){
   let dateObj = {
-    'Jan': 1,
-    'Feb': 2,
-    'Mar': 3,
-    'Apr': 4,
-    'May': 5,
-    'Jun': 6,
-    'Jul': 7,
-    'Aug': 8,
-    'Sep': 9,
-    'Oct': 10,
-    'Nov': 11,
-    'Dec': 12
+    'Jan':1,
+    'Feb':2,
+    'Mar':3,
+    'Apr':4,
+    'May':5,
+    'Jun':6,
+    'Jul':7,
+    'Aug':8,
+    'Sep':9,
+    'Oct':10,
+    'Nov':11,
+    'Dec':12
+
   };
   let finDate = [];
   let months = [];
   let days = [];
+
   let theEnd = [];
   for(let i = 0; i < dates.length; i++) {
     dates[i] = dates[i].split(' ');
@@ -44,6 +47,7 @@ function orderDates(dates) {
   }
 
 }
+
 
 console.log(orderDates(dates));
 
