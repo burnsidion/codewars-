@@ -42,13 +42,12 @@ function orderDates(dates){
     finDate.sort((a, b) => b[0] - a[0])
   for(let j = 0; j < finDate.length; j++){
       months.push(finDate[j][1])
-
       days.push(finDate[j][2])
+    }
+
   }
+  
 
-}
+  console.log(orderDates(dates));
 
-
-console.log(orderDates(dates));
-
-//Question 2
+  //Question 2
